@@ -6,24 +6,32 @@
 .logoleft {
   float: left;
   display: flex;
-  width: 18%;
+  width: 13%;
   justify-content: space-between;
+  margin-left: 17%
 }
 
 .logoright {
   float: right;
   display: flex;
-  width: 18%;
+  width: 10%;
   justify-content: space-between;
+  margin-right: 17%
 }
 
 .navbar {
   display: flex;
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
   justify-content: space-between;
-  width: 66%;
+  width: 100%;
   margin: auto;
   height: 75px;
   overflow: auto;
+  background-color: white;
+  z-index: 1;
 }
 
 .searchbar {
@@ -39,6 +47,7 @@ input {
 
 .container {
   position: relative;
+  top: 75px;
   height: 100%;
   display: flex;
   width: 66%;
@@ -72,4 +81,14 @@ input {
 
 .user, .stories, .suggestions {
   position:
+}
+
+@media screen and (max-width: 964px) {
+  .rightcol,
+  .searchbar {
+    display: none;
+  }
+  .leftcol {
+    width: 100%;
+  }
 }
