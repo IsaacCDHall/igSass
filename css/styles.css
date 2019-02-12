@@ -1,0 +1,75 @@
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.logoleft {
+  float: left;
+  display: flex;
+  width: 18%;
+  justify-content: space-between;
+}
+
+.logoright {
+  float: right;
+  display: flex;
+  width: 18%;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 66%;
+  margin: auto;
+  height: 75px;
+  overflow: auto;
+}
+
+.searchbar {
+  align-self: center;
+  justify-content: center;
+}
+
+input {
+  text-align: center;
+  width: 200px;
+  height: 25px;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  display: flex;
+  width: 66%;
+  margin: auto;
+  overflow: auto;
+  justify-content: space-between;
+}
+
+.leftcol, .rightcol {
+  display: flex;
+  flex-direction: column;
+}
+
+.leftcol {
+  align-content: flex-start;
+  width: 70%;
+}
+
+.rightcol {
+  position: fixed;
+  right: 18%;
+  align-content: flex-end;
+  width: 17%;
+  height: 100%;
+}
+
+.stories, .suggestions, .post {
+  border: 2px solid black;
+  margin-bottom: 40px;
+}
+
+.user, .stories, .suggestions {
+  position:
+}
