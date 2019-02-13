@@ -1,37 +1,43 @@
-/* .logo {
-  height: 50px;
-  width: auto;
+$space: space-between;
+$flex: flex;
+
+@import "mixins";
+
+.logo {
+  // height: 50px;
+  // width: auto;
+  @include position(50px, auto)
 }
 
 .logoleft {
   float: left;
-  display: flex;
+  @include justify-space;
   width: 13%;
-  justify-content: space-between;
   margin-left: 17%
 }
-
+main{
+  color:rgba(255, 255, 0, .8);
+}
 .logoright {
   float: right;
-  display: flex;
+  @include justify-space;
   width: 10%;
-  justify-content: space-between;
   margin-right: 17%
 }
 
 .navbar {
-  display: flex;
+  @include justify-space;
   position: fixed;
   top: 0%;
   left: 50%;
   transform: translateX(-50%);
-  justify-content: space-between;
-  width: 100%;
   margin: auto;
-  height: 75px;
+  // height: 75px;
+  // width: 100%;
   overflow: auto;
   background-color: white;
   z-index: 1;
+  @include position(75px,100%)
 }
 
 .searchbar {
@@ -49,15 +55,14 @@ input {
   position: relative;
   top: 75px;
   height: 100%;
-  display: flex;
+  @include justify-space;
   width: 66%;
   margin: auto;
   overflow: auto;
-  justify-content: space-between;
 }
 
 .leftcol, .rightcol {
-  display: flex;
+  display: $flex;
   flex-direction: column;
 }
 
@@ -86,4 +91,10 @@ input {
   #paragraph-clear {
     overflow: auto;
   }
-} */
+  .rightcol {
+    display: none;
+  }
+  .leftcol {
+    width: 95%;
+  }
+}

@@ -1,0 +1,8 @@
+@mixin justify-space{
+  display:$flex;
+  justify-content: $space;
+}
+@mixin position($height,$width){
+  height:$height;
+  width:$width;
+}

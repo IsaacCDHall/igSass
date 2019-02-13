@@ -1,89 +1,87 @@
-/* .logo {
+.logo {
   height: 50px;
-  width: auto;
-}
+  width: auto; }
 
 .logoleft {
   float: left;
   display: flex;
-  width: 13%;
   justify-content: space-between;
-  margin-left: 17%
-}
+  width: 13%;
+  margin-left: 17%; }
+
+main {
+  color: rgba(255, 255, 0, 0.8); }
 
 .logoright {
   float: right;
   display: flex;
-  width: 10%;
   justify-content: space-between;
-  margin-right: 17%
-}
+  width: 10%;
+  margin-right: 17%; }
 
 .navbar {
   display: flex;
+  justify-content: space-between;
   position: fixed;
   top: 0%;
   left: 50%;
   transform: translateX(-50%);
-  justify-content: space-between;
-  width: 100%;
   margin: auto;
-  height: 75px;
   overflow: auto;
   background-color: white;
   z-index: 1;
-}
+  height: 75px;
+  width: 100%; }
 
 .searchbar {
   align-self: center;
-  justify-content: center;
-}
+  justify-content: center; }
 
 input {
   text-align: center;
   width: 200px;
-  height: 25px;
-}
+  height: 25px; }
 
 .container {
   position: relative;
   top: 75px;
   height: 100%;
   display: flex;
+  justify-content: space-between;
   width: 66%;
   margin: auto;
-  overflow: auto;
-  justify-content: space-between;
-}
+  overflow: auto; }
 
 .leftcol, .rightcol {
   display: flex;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .leftcol {
   align-content: flex-start;
-  width: 70%;
-}
+  width: 70%; }
 
 .rightcol {
   position: fixed;
   right: 18%;
   align-content: flex-end;
   width: 17%;
-  height: 100%;
-}
+  height: 100%; }
 
 .stories, .suggestions, .post {
   border: 2px solid black;
-  margin-bottom: 40px;
-}
+  margin-bottom: 40px; }
 
 @media screen and (max-width: 964px) {
   .searchbar {
-    display: none;
-  }
+    display: none; }
+
   #paragraph-clear {
-    overflow: auto;
-  }
-} */
+    overflow: auto; }
+
+  .rightcol {
+    display: none; }
+
+  .leftcol {
+    width: 95%; } }
+
+/*# sourceMappingURL=output.css.map */
