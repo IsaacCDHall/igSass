@@ -85,7 +85,22 @@ input {
   margin-bottom: 40px;
 }
 
-@media screen and (max-width: 964px) {
+// @media screen and (max-width: 964px) {
+//   .searchbar {
+//     display: none;
+//   }
+//   #paragraph-clear {
+//     overflow: auto;
+//   }
+//   .rightcol {
+//     display: none;
+//   }
+//   .leftcol {
+//     width: 95%;
+//   }
+// }
+
+@include mQ(964px){
   .searchbar {
     display: none;
   }
